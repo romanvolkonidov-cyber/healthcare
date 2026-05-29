@@ -1330,8 +1330,66 @@ button {
   font-size: 0.975rem;
 }
 
+.contact-list a {
+  display: inline-block;
+  margin-right: 14px;
+}
+
 .contact-list a:hover {
   color: var(--teal-700);
+}
+
+/* offices */
+.offices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.office {
+  background: var(--surface);
+  border: 1px solid var(--ink-100);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-xs);
+}
+
+.office h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink-900);
+  margin-bottom: 10px;
+}
+
+.office h3 svg {
+  color: var(--teal-600);
+  flex-shrink: 0;
+}
+
+.office p {
+  font-size: 0.92rem;
+  color: var(--ink-600);
+  line-height: 1.55;
+}
+
+.office-phones {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+}
+
+.office-phones a {
+  font-weight: 600;
+  color: var(--teal-700);
+}
+
+.office-phones a:hover {
+  color: var(--teal-800);
 }
 
 .contact-form {
@@ -1757,6 +1815,10 @@ button {
 
   .contact-form {
     padding: 24px;
+  }
+
+  .offices {
+    grid-template-columns: 1fr;
   }
 
   .announcement-inner {
