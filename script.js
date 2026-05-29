@@ -34,7 +34,7 @@
 
   // reveal-on-scroll
   const revealTargets = document.querySelectorAll(
-    ".section-head, .service-card, .value-item, .why-card, .why-list li, .step, .testimonial, .hero-copy, .hero-art, .about-media, .about-copy, .contact-info, .contact-form, .trust-item"
+    ".section-head, .service-card, .value-item, .why-card, .why-list li, .step, .testimonial, .region-card, .hero-copy, .hero-art, .about-media, .about-copy, .contact-info, .contact-form, .trust-item"
   );
   revealTargets.forEach((el) => el.classList.add("reveal"));
 
