@@ -1555,6 +1555,28 @@ button {
   margin: 0;
 }
 
+.form-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+}
+
+.form-error p {
+  margin: 0;
+}
+
+.form-error a {
+  color: #991b1b;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 /* ============================================
    Footer
    ============================================ */
