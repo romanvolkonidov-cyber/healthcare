@@ -1283,6 +1283,83 @@ button {
 }
 
 /* ============================================
+   Coverage
+   ============================================ */
+.coverage {
+  background: linear-gradient(180deg, var(--bg), var(--surface-2));
+}
+
+.coverage-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.region-card {
+  background: #fff;
+  border: 1px solid var(--ink-100);
+  border-radius: var(--radius-lg);
+  padding: 26px 24px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.region-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.region-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink-900);
+  margin-bottom: 18px;
+}
+
+.region-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--teal-50);
+  color: var(--teal-700);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--teal-100);
+}
+
+.county-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.county-chips li {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink-700);
+  background: var(--surface-2);
+  border: 1px solid var(--ink-100);
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+
+.coverage-note {
+  text-align: center;
+  margin-top: 36px;
+  color: var(--ink-600);
+  font-size: 1rem;
+}
+
+.coverage-note a {
+  font-weight: 600;
+}
+
+/* ============================================
    Contact
    ============================================ */
 .contact-grid {
@@ -1330,8 +1407,66 @@ button {
   font-size: 0.975rem;
 }
 
+.contact-list a {
+  display: inline-block;
+  margin-right: 14px;
+}
+
 .contact-list a:hover {
   color: var(--teal-700);
+}
+
+/* offices */
+.offices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.office {
+  background: var(--surface);
+  border: 1px solid var(--ink-100);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-xs);
+}
+
+.office h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink-900);
+  margin-bottom: 10px;
+}
+
+.office h3 svg {
+  color: var(--teal-600);
+  flex-shrink: 0;
+}
+
+.office p {
+  font-size: 0.92rem;
+  color: var(--ink-600);
+  line-height: 1.55;
+}
+
+.office-phones {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+}
+
+.office-phones a {
+  font-weight: 600;
+  color: var(--teal-700);
+}
+
+.office-phones a:hover {
+  color: var(--teal-800);
 }
 
 .contact-form {
@@ -1418,6 +1553,28 @@ button {
 
 .form-success p {
   margin: 0;
+}
+
+.form-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+}
+
+.form-error p {
+  margin: 0;
+}
+
+.form-error a {
+  color: #991b1b;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 /* ============================================
@@ -1614,6 +1771,10 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .coverage-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1759,11 +1920,19 @@ button {
     padding: 24px;
   }
 
+  .offices {
+    grid-template-columns: 1fr;
+  }
+
   .announcement-inner {
     font-size: 0.8rem;
   }
 
   .why-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .coverage-grid {
     grid-template-columns: 1fr;
   }
 
